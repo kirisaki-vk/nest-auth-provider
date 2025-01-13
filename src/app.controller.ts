@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('public')
+  getPublic() {
+    return 'This endpoint is public and can be called unauthenticated';
+  }
 }
